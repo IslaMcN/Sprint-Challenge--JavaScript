@@ -10,7 +10,7 @@ class CuboidMaker{
       return (this.length * this.width * this.height)
   }
   surfaceArea(){
-      return (2*(this.lenth * this.width + this.length *this.height + this.width * this.height))
+      return ( 2*(this.lenth * this.width + this.length *this.height + this.width * this.height))
   }
 }
   
