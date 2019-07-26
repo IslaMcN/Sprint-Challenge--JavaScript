@@ -93,12 +93,17 @@ graduates.forEach( thing => {
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
 const uni = []
-graduates.filter( => {
-  let item = university.includes('Uni');
-  uni.push(item);
-});
-
-console.log(uni);
+let findUni = function (){
+  for (let i=0; i< graduates.length; i++) {
+    let student = graduates[i];
+    let college = student.university;
+    if (college.includes("Uni")) {
+      uni.push(student)
+    }
+  }
+  return JSON.stringify(uni);
+}
+console.log(findUni());
 
 
 // ==== ADVANCED Array Methods ====
